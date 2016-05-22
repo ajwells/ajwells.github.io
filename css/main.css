@@ -5,32 +5,87 @@ html, body{
 	padding: 0;
 }
 
-.active{
-	background-color: #0099ff;
-}
-
-ul{
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
+/* ----page---- */
 .page-container{
 	color: white;
 }
 
+/* ----header---- */
 .header{
 	background: black;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
+/* ----v-menu---- */
 .menu{
 	float: left;
 	width: 100px;
 	list-style-type: none;
 }
 
+.menu .active{
+	background: #0099ff;
+}
+
+.menu ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.menu a{
+	text-decoration: none;
+	color: inherit;
+	padding: 5px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+.menu a:hover{
+	text-decoration: none;
+	color: yellow;
+	cursor: pointer;
+}
+
+/* ----h-menu---- */
+.h-menu{
+	list-style-type: none;
+}
+
+.h-menu .active{
+	background: #000000;
+}
+
+.h-menu li{
+	display: inline;
+}
+
+.h-menu ul{
+	list-style-type: none;
+}
+
+.h-menu a{
+	text-decoration: none;
+	color: inherit;
+	margin: 20px;
+	padding: 5px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+.h-menu a:hover{
+	text-decoration: none;
+	color: yellow;
+	cursor: pointer;
+}
+
+/* ----footer---- */
 .footer{
 	background: black;
 	clear: left;

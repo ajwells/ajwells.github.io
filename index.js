@@ -4,12 +4,14 @@ import { Router, Route, IndexRoute, hashHistory, browserHistory } from 'react-ro
 import App from './src/app';
 import Home from './src/home';
 import About from './src/about';
+import Projects from './src/projects';
 
 ReactDOM.render(
 		<Router history={browserHistory} >
-			<Route path="/" component={App}>
+			<Route path="/" component={App} >
 				<IndexRoute component={Home} />
 				<Route path="about" component={About} />
+				<Route path="projects" component={Projects} />
 			</Route>
 		</Router>,
 		document.getElementById('app')

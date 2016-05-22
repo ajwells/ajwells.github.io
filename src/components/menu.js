@@ -10,10 +10,9 @@ export default class Menu extends React.Component {
 
 	render() {
 		return <div>
-			<ul className="menu">
 				<li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
 				<li><Link to="/about" activeClassName="active">About</Link></li>
-			</ul>
+				<li><Link to="/projects" activeClassName="active">Projects</Link></li>
 		</div>	
 	};
 }
