@@ -1,7 +1,6 @@
 import React from 'react';
-import HMenu from './components/h-menu';
-import Header from './components/header';
-import Footer from './components/footer';
+import { PageHeader } from 'react-bootstrap';
+import Navbar from './components/navbar';
 
 export default class App extends React.Component {
 
@@ -11,9 +10,8 @@ export default class App extends React.Component {
 
 	render() {
 		return <div>
-			<div> Logo </div>
-			<HMenu />
-			<Footer />
-		</div>	
+			<PageHeader> Aaron Wells </PageHeader>
+			<Navbar />
+		</div>
 	};
 }

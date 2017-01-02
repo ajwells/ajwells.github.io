@@ -1,7 +1,6 @@
 import React from 'react';
-import VMenu from './components/v-menu';
-import Header from './components/header';
-import Footer from './components/footer';
+import { PageHeader } from 'react-bootstrap';
+import Navbar from './components/navbar.js';
 
 export default class App extends React.Component {
 
@@ -11,12 +10,8 @@ export default class App extends React.Component {
 
 	render() {
 		return <div>
-			<Header />
-			<VMenu />
-			<div className="content">
-				Content
-			</div>
-			<Footer />
+			<PageHeader> Aaron Wells </PageHeader>
+			<Navbar />
 		</div>	
 	};
 }
