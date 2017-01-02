@@ -19,7 +19,7 @@ export default class Navbar extends React.Component {
 		return <div>
 			<div style={{background: '#2C2A2A', paddingTop:'10px'}}>
 				<div className='inverted ui horizontal divider'>
-					<Menu inverted pointing secondary>
+					<Menu inverted pointing secondary color="grey" style={{backgroud: '#000000'}}>
 						<Menu.Item as={Link} to='/home' name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick}> 
 							<Icon name='home'/>
 							Home
