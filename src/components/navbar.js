@@ -15,7 +15,7 @@ export default class Menu extends React.Component {
 			<Navbar inverse> 
 				<Navbar.Header>
 					<Navbar.Brand>
-      			<Link to="/home"> Home </Link>
+      			<Link to="/home"> Aaron Wells </Link>
       		</Navbar.Brand>
       		<Navbar.Toggle />
 				</Navbar.Header>

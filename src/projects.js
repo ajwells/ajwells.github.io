@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageHeader } from 'react-bootstrap';
+import { PageHeader, Jumbotron, Image } from 'react-bootstrap';
 import Navbar from './components/navbar.js';
 
 export default class App extends React.Component {
@@ -10,8 +10,13 @@ export default class App extends React.Component {
 
 	render() {
 		return <div>
-			<PageHeader> Aaron Wells </PageHeader>
+			<Image src='/src/images/logo.png' responsive />
 			<Navbar />
+			<div>
+				<h1>
+				{this.props.params.name}
+				</h1>
+			</div>
 		</div>	
 	};
 }
