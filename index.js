@@ -7,7 +7,7 @@ import About from './src/about';
 import Projects from './src/projects';
 
 ReactDOM.render(
-		<Router history={browserHistory} >
+		<Router history={hashHistory} >
 			<Route path="/" component={App} >
 				<IndexRoute component={Home} />
 				<Route path="/home" component={Home} />
