@@ -10,7 +10,7 @@ export default class App extends React.Component {
 
 	render() {
 		return <div>
-			<Image src='/src/images/logo.png' responsive />
+			<Image src='src/images/logo.png' responsive />
 			<Navbar />
 			<div>
 				<h1>
