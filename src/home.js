@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageHeader, Image } from 'react-bootstrap';
+import { Menu, Image } from 'semantic-ui-react';
 import Navbar from './components/navbar';
 
 export default class App extends React.Component {
@@ -10,8 +10,8 @@ export default class App extends React.Component {
 
 	render() {
 		return <div>
-			<Image src='src/images/logo.png' responsive />
-			<Navbar />
+			<Navbar active='Home'/>
+			<Image src='src/images/logo_large.png' fluid />
 		</div>
 	};
 }

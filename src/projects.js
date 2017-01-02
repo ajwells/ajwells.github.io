@@ -10,8 +10,8 @@ export default class App extends React.Component {
 
 	render() {
 		return <div>
-			<Image src='src/images/logo.png' responsive />
-			<Navbar />
+			<Navbar active='Projects'/>
+			<Image src='src/images/logo_large.png' responsive />
 			<div>
 				<h1>
 				{this.props.params.name}
