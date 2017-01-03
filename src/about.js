@@ -12,15 +12,15 @@ export default class App extends React.Component {
 		return <div>
 			<Navbar active='About'/> 
 			<div style={{paddingTop:'60px'}}/>
-			<Grid columns={3} textAlign='center'>
+			<Grid columns={3} centered textAlign='center'>
 				<Grid.Column>
-					<Image src='src/images/me.jpg' shape='rounded' centered />
-					<Segment textAlign='center' style={{background:'#2C2A2A', color:'white'}}>
+					<Image src='src/images/me.jpg' shape='rounded' centered bordered />
+					<Segment textAlign='center' style={{background:'#2C2A2A', color:'white', fontSize:'large'}}>
 						<b>Computer Science Graduate Student</b>
 						<Divider horizontal inverted>AT</Divider>
 						<b>The College of William and Mary</b>
 					</Segment>
-					<Rail style={{color:'white'}} size='big' position='left'>
+					<Rail style={{color:'white'}} size='huge' position='left'>
 						<div style={{paddingTop:'100px'}} />
 						<List>
 							<List.Item>
@@ -45,7 +45,7 @@ export default class App extends React.Component {
 							</List.Item>
 						</List>
 					</Rail>
-					<Rail style={{color:'white', textAlign:'left'}} size='big' position='right'>
+					<Rail style={{color:'white', textAlign:'left'}} size='huge' position='right'>
 						<div style={{paddingTop:'100px'}} />
 						<List>
 							<List.Item>

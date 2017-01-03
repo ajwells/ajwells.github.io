@@ -1,20 +1,25 @@
 import React from 'react';
-import { Icon, Divider, Label, Item, Image, Segment } from 'semantic-ui-react';
+import { Grid, Icon, Divider, Label, Item, Image, Segment } from 'semantic-ui-react';
 import {Link} from 'react-router';
 import Navbar from './components/navbar.js';
 
-const projects = ['two_way_mirror', 'test'];
+const projects = ['two_way_mirror', 'bluefruit_led_clock', 'robo_ops'];
 const info = {
 	two_way_mirror: 
 		{name: 'Two Way Mirror', image: 'src/images/two_way_mirror.png',
 			description: 'A two way mirror that displays the current time and weather.',
 			labels: [['Hardware', 'Raspberry Pi', 'disk outline'], ['Language', 'Processing', 'code']],
-			extra: 'Completed: 12/25/2016'},
-	test:
+			extra: 'Completed: Dec 2016'},
+	bluefruit_led_clock:
 		{name: 'BlueFruit LED Clock', image: 'src/images/logo_small.png',
 			description: 'A bluetooth low energy enabled LED clock.',
 			labels: [['Hardware', 'BlueFruit', 'disk outline'], ['Language', 'C++', 'code']],
 			extra: 'In Progress'},
+	robo_ops:
+		{name: 'NASA Robo Ops', image: 'src/images/robo_ops.png',
+			description: 'A networked sensor system with dashboard for NASA\'s telerobotic rover competition.',
+			labels: [['Hardware', 'Raspberry Pi', 'disk outline'], ['Language', 'Python | C | JavaScript', 'code']],
+			extra: 'Completed: May 2016'},
 };
 
 export default class App extends React.Component {
@@ -64,8 +69,14 @@ export default class App extends React.Component {
 	render() {
 		return <div>
 			<Navbar active='Projects'/>
-			<div style={{paddingLeft:'100px', paddingTop:'100px'}}>
+			<div style={{paddingTop:'100px'}}>
+			<Grid columns={3}>
+				<Grid.Column width={4}/>
+				<Grid.Column width={10}>
 				{this.getAllProjects()}
+				</Grid.Column>
+				<Grid.Column width={4}/>
+			</Grid>
 			</div>
 		</div>	
 	};
