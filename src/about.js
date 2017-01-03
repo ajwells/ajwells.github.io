@@ -20,12 +20,16 @@ export default class App extends React.Component {
 						<Divider horizontal inverted>AT</Divider>
 						<b>The College of William and Mary</b>
 					</Segment>
-					<Rail style={{color:'white'}} size='huge' position='left'>
+					<Rail style={{color:'white', textAlign:'left'}} size='huge' position='left'>
 						<div style={{paddingTop:'100px'}} />
 						<List>
 							<List.Item>
 								<List.Icon name='user' />
 								<List.Content>Aaron Wells</List.Content>
+							</List.Item>
+							<List.Item>
+								<List.Icon name='student' />
+								<List.Content>The College of William and Mary</List.Content>
 							</List.Item>
 							<List.Item>
 								<List.Icon name='marker' />
@@ -64,6 +68,12 @@ export default class App extends React.Component {
 									<div>Practical Electronics for Inventors -</div>
 									<div>Paul Scherz & Simon Monk</div>
 									</a>
+								</List.Content>
+							</List.Item>
+							<List.Item>
+								<List.Icon name='heartbeat' />
+								<List.Content>
+								<a href='http://sealteampt.com/'>Seal Team PT</a>
 								</List.Content>
 							</List.Item>
 							<List.Item>

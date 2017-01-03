@@ -3,7 +3,7 @@ import { Grid, Icon, Divider, Label, Item, Image, Segment } from 'semantic-ui-re
 import {Link} from 'react-router';
 import Navbar from './components/navbar.js';
 
-const projects = ['two_way_mirror', 'bluefruit_led_clock', 'robo_ops'];
+const projects = ['two_way_mirror', 'bluefruit_led_clock', 'robo_ops', 'lsb_stego'];
 const info = {
 	two_way_mirror: 
 		{name: 'Two Way Mirror', image: 'src/images/two_way_mirror.png',
@@ -16,9 +16,14 @@ const info = {
 			labels: [['Hardware', 'BlueFruit', 'disk outline'], ['Language', 'C++', 'code']],
 			extra: 'In Progress'},
 	robo_ops:
-		{name: 'NASA Robo Ops', image: 'src/images/robo_ops.png',
+		{name: 'NASA Robo-Ops', image: 'src/images/robo_ops.png',
 			description: 'A networked sensor system with dashboard for NASA\'s telerobotic rover competition.',
 			labels: [['Hardware', 'Raspberry Pi', 'disk outline'], ['Language', 'Python | C | JavaScript', 'code']],
+			extra: 'Completed: May 2016'},
+	lsb_stego:
+		{name: 'LSB Stego', image: 'src/images/spy.png',
+			description: 'Simple least significant bit image stegonagraphy encryption and decryption.',
+			labels: [['Language', 'Java', 'code']],
 			extra: 'Completed: May 2016'},
 };
 
