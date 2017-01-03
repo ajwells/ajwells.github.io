@@ -11,7 +11,7 @@ export default class App extends React.Component {
 	render() {
 		return <div>
 			<Navbar active='Home'/>
-			<Image src='src/images/logo_large.png' fluid />
+			<Image src='src/images/logo2.png' fluid />
 		</div>
 	};
 }
