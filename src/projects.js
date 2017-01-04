@@ -22,7 +22,7 @@ const info = {
 			extra: 'Completed: May 2016'},
 	lsb_stego:
 		{name: 'LSB Stego', image: 'src/images/spy.png',
-			description: 'Simple least significant bit image stegonagraphy encryption and decryption.',
+			description: 'Simple least significant bit image steganography encryption and decryption.',
 			labels: [['Language', 'Java', 'code']],
 			extra: 'Completed: May 2016'},
 };
