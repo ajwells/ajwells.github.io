@@ -6,8 +6,8 @@ import Navbar from './components/navbar.js';
 const projects = ['two_way_mirror', 'bluefruit_led_clock', 'robo_ops', 'lsb_stego'];
 const info = {
 	two_way_mirror: 
-		{name: 'Two Way Mirror', image: 'src/images/two_way_mirror.png',
-			description: 'A two way mirror that displays the current time and weather.',
+		{name: 'Smart Mirror', image: 'src/images/two_way_mirror.png',
+			description: 'A smart mirror that displays the current time and weather.',
 			labels: [['Hardware', 'Raspberry Pi', 'disk outline'], ['Language', 'Processing', 'code']],
 			extra: 'Completed: Dec 2016'},
 	bluefruit_led_clock:
