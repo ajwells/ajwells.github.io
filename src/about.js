@@ -16,9 +16,9 @@ export default class App extends React.Component {
 				<Grid.Column>
 					<Image src='src/images/me.jpg' shape='rounded' centered bordered />
 					<Segment textAlign='center' style={{background:'#2C2A2A', color:'white', fontSize:'large'}}>
-						<b>Computer Science Graduate Student</b>
+						<b>Embedded Software Lead</b>
 						<Divider horizontal inverted>AT</Divider>
-						<b>The College of William and Mary</b>
+						<b>QinetiQ</b>
 					</Segment>
 					<Rail style={{color:'white', textAlign:'left'}} size='huge' position='left'>
 						<div style={{paddingTop:'100px'}} />
@@ -33,7 +33,7 @@ export default class App extends React.Component {
 							</List.Item>
 							<List.Item>
 								<List.Icon name='marker' />
-								<List.Content>Williamsburg, VA</List.Content>
+								<List.Content>Dumfries, VA</List.Content>
 							</List.Item>
 							<List.Item>
 								<List.Icon name='mail' />
